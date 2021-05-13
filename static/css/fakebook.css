@@ -1,0 +1,69 @@
+.estrutura {
+    max-width: 960px;
+    margin: auto;
+    background: white;
+    text-align: center;
+}
+.titulo {
+    color: #0c0d0c;
+    font-size: 60px;
+    background-color: #1C552C;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 20px;
+}
+#searchbox {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-radius: 50%;
+}
+.addfriend {
+    background-color: white;
+    color: black;
+    border: 2px solid #1C552C;
+    font-size: 15px;
+    padding: 12px 18px;
+}
+.addfriend:hover {
+    background-color: #1C552C;
+    color: white;
+}
+.nome {
+    font-size: 35px;
+    padding: 20px;
+}
+.nav {
+  background-color: #0c0d0c;
+  overflow: hidden;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  }
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav a:hover {
+  background-color: #1C552C;
+  color: white;
+}
+.nav a.active {
+  background-color: #1C552C;
+  color: white;
+}
+.nav input {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px
+}

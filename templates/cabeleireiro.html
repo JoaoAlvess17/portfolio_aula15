@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Hairdresser</title>
+        <!-- Fonts Google-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <!--Bootstrap CSS-->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+       <link rel="stylesheet" href="static/css/cabeleireiro.css">
+       <!-- fontawesome css-->
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    </head>
+    <body class="bg-light">
+    <!---------Modal---------->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Promoções</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>Use o Código:"SmartNinja30"</p>
+                        <p>E obtenha 30% de desconto, em todos os Serviços!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <img src="img/logo.png"  height="50px">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#servicos">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactos">Contactos</a>
+              </li>
+              <li class="nav-item">
+                <a href="#myModal" data-toggle ="modal" data-target="#myModal" class="nav-link">Promoções</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">Junta-te</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    <!-- Banner IMG -->
+        <div class="containerbanner">
+            <div id="carouselExampleControls" class="carousel" data-ride="carousel">
+              <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="static/img/banner 1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="static/img/banner2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="static/img/banner3.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+            </div>
+        </div>
+    <!-- cartoes Serviços-->
+        <div class="container cards" id="servicos">
+            <h2 class="text-center">Os Nossos Serviços </h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" id="card1">
+                        <img src="img/servicos1.jpg" class="d-block w-100" alt="lavar e cortar cabelo">
+                        <div class="card-body">
+                            <h4 class="card-title text-center bg-black">Cortar</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" id="card1">
+                        <img src="img/servicos2.jpg" class="d-block w-100" alt="coloração cabelo">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Lavar</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" id="card1">
+                         <img src="img/servicos3.jpg" class="d-block w-100" alt="coloração cabelo">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Pintar</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--Form Marcações -->
+        <div class="container mt-10" id="contactos">
+            <h2 class="text-center">Fazer uma Marcação</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Seu Email">
+
+                    <input type="text" class="form-control mt-2" placeholder="Contacto telefónico">
+
+                    <input type="text" class="form-control mt-2" placeholder="Data e Hora da Marcação">
+
+                    <textarea class="form-control mt-2" placeholder="Outras informações" rows="3"></textarea>
+
+                    <button class="btn btn-success center-block mt-3">Enviar</button>
+                </div>
+    <!-- Horario-->
+                <div class="col-md-4 offset-md-1">
+                     <table class="table table-striped table-hover">
+                         <thead>
+                                <tr>
+                                    <th>Dia</th>
+                                    <th>Horário</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Segunda a Sexta</td>
+                                    <td>9h00 - 19h00</td>
+                                </tr>
+                                <tr>
+                                    <td>Sábado</td>
+                                    <td>8h00 - 13:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Domingo e Feriados</td>
+                                    <td>Só para Ninjas</td>
+                                </tr>
+                            </tbody>
+                     </table>
+                </div>
+            </div>
+        </div>
+    <!------- FAQ -------->
+        <div class="container mt-4" id="faq">
+        <h2 class="text-center">Sobre Nós</h2>
+        <div class="accordion mt-4" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Como se tornar um SmartNinja Hairdresser.
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                       Se tens interesse pela arte de cortar cabelo, e te consideras Smart como um Ninja, entra
+                        em contacto atraves do email smartninjahairdressers@gmail.com!
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" id="btnfaq" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            O que Oferecemos.
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Oferecemos excelentes condições de trabalho, num ambiente super divertido e descontraído,
+                        remuneração base acima da média mais comissões.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-light text-center text-white">
+      <h3 class="text-black">Visita as Nossas Redes Sociais</h3>
+      <h4 id="footertitle" class="text-black">Coloca-te a Par de Tudo:</h4>
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #3b5998;"
+            href="https://www.facebook.com/SmartNinjaPT"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #55acee;"
+            href="https://twitter.com/smartninjaorg?lang=en"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ac2bac;"
+            href="https://www.instagram.com/smartninjas/"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      <div class="text-center p-3" style="background-color:#30d9a4;">
+        © 2021 Copyright:
+        <a class="text-white" href="https://smartninja.org/">SmartNinja.org</a>
+      </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    </body>
+</html>

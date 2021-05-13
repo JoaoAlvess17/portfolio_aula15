@@ -1,0 +1,63 @@
+
+/* navbar */
+.navbar {
+    background-color: #30d9a4;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+/*img banner */
+.containerbanner {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/* cartoes servicos */
+.row {
+    justify-content: center;
+    margin-top: 15px;
+}
+h2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: #30d9a4;
+    font-family: 'Open Sans', sans-serif;
+}
+#card1 {
+    background-color: #30d9a4;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+/* tabela/horario*/
+.btn-success {
+    background-color: #30d9a4;
+}
+.btn-success:hover {
+    background-color: #30d9a4;
+}
+/*  faq  */
+.btn-link {
+    color: #30d9a4;
+}
+.btn-link:hover {
+    color: #30d9a4;
+}
+/*  footer  */
+footer {
+    margin-top: 5em;
+}
+h3, #footertitle {
+    color: #30d9a4;
+}
+.btn-primary {
+    width: 40px;
+    border-style: none;
+    border-radius: 15px;
+}
+.btn-primary:hover {
+    box-shadow: 0px 0px 20px -0px rgba(0,0,0,0.50);
+}
+
